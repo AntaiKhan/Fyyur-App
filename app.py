@@ -515,7 +515,7 @@ def shows():
     datas['artist_image_link'] = Artist.query.filter_by(Artist.id==show.artist_id).first().image_link
     datas['start_time'] =show.start_time
   
-  data.append(datas)
+    data.append(datas)
 
   return render_template('pages/shows.html', shows=data)
 
